@@ -196,7 +196,7 @@ In words, the model recommends starting the culture with 15 mM glucose, 6 mM glu
  
 *Figure 5. Left: median mAb forecast with 95% prediction interval at the recommended conditions. Right: space-time profit against harvest time; the dashed line marks the chosen harvest.*
  
-The right panel of Figure 5 explains the harvest time. Profit is negative at time zero (only cost, no mAb), jumps to about 195 `$`/(L d) after 8 h as mAb reaches 0.63 mg/L (left panel), peaks at 197.5 at 24 h, and then declines steadily to about 25 `$`/(L d) at 28 days, because mAb has plateaued while the cycle time keeps growing. The curve is nearly flat between 8 and 24 h, and the prediction band there spans roughly 140 to 250 `$/(L d), so any harvest in this window is statistically indistinguishable; 24 h simply has the highest median.
+The right panel of Figure 5 explains the harvest time. Profit is negative at time zero (only cost, no mAb), jumps to about 195 `$`/(L d) after 8 h as mAb reaches 0.63 mg/L (left panel), peaks at 197.5 at 24 h, and then declines steadily to about 25 `$`/(L d) at 28 days, because mAb has plateaued while the cycle time keeps growing. The curve is nearly flat between 8 and 24 h, and the prediction band there spans roughly 140 to 250 `$`/(L d), so any harvest in this window is statistically indistinguishable; 24 h simply has the highest median.
  
 **Table 5. The ten best conditions by median predicted space-time profit** (the full top 20 is in `tables/optimization_ranking_top20.csv`)
  
