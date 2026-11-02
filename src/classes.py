@@ -1,6 +1,6 @@
 # CLASSES
 # Define custom classes in this file.
-# =======================================================================
+
 
 import numpy as np
 
@@ -8,7 +8,7 @@ import src.constants as c
 
 
 class Batch:
-    """One batch run: its initial conditions and its measured time series."""
+
 
     def __init__(self, batch_id, glucose_0, glutamine_0, vcd_0, time_h, data):
         self.batch_id = batch_id
@@ -27,16 +27,7 @@ class Batch:
 
 
 class FeatureScaler:
-    """Standardizes every process variable independently (mean 0, SD 1).
-
-    A time series model uses several lagged copies of the same variable, so all
-    lags of a variable must share ONE mean and SD (see Unit 5b, VAR
-    standardization). Scaling each batch time series *before* the lagged
-    columns are built guarantees this automatically.
-
-    The scaler is fitted on a list of batches (arrays of shape (time, feature)),
-    so the statistics come from all time points of all training batches.
-    """
+    """Standardizes every process variable independently (mean 0, SD 1)"""
 
     def fit(self, series_list):
         x = np.vstack(series_list)
@@ -47,8 +38,7 @@ class FeatureScaler:
         # value of 0 expressed in standardized units (used to clip forecasts).
         self.lower_ = (0.0 - self.mean_) / self.scale_
         # Safety bound: a forecast may not exceed twice the largest value seen
-        # in training. Without it, unstable polynomial models can diverge to
-        # infinity when their own predictions are fed back in as inputs.
+        # in training.
         self.upper_ = (2.0 * x.max(axis=0) - self.mean_) / self.scale_
         return self
 

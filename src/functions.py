@@ -1,6 +1,6 @@
 # FUNCTIONS
 # Define reusable helper functions in this file.
-# =======================================================================
+
 import os
 import numpy as np
 import pandas as pd
@@ -178,15 +178,10 @@ def candidate_configs():
 
 
 # ============================================================================
-# 3. Forecasting with white noise (vectorized over conditions and simulations)
+# 3. Forecasting with white noise
 # ============================================================================
 def simulate(model, x_ic, p, n_steps, residuals, n_sims, lower, upper, rng, noise=True):
     """Forecast whole batches starting from initial conditions.
-
-    Recursive forecasting (predictions are fed back in as lags, white
-    noise sampled from the training residuals of each feature, clip at 0), but
-    all conditions and simulations are advanced together so that only one
-    model.predict() call is needed per time step.
 
     Parameters
     ----------

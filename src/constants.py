@@ -4,10 +4,8 @@
 
 import os
 
-# ----------------------------------------------------------------------------
 # Paths
 # ----------------------------------------------------------------------------
-# All paths are relative to the project root (run main.py from there).
 PROVIDED_DIR = "datasets"
 INITIAL_CONDITIONS_FILE = os.path.join(PROVIDED_DIR, "initial_conditions.csv")
 SELECTED_FILE = "selected_batches.csv"  # the 30 batches we "download"
@@ -45,7 +43,6 @@ IDX_MAB = FEATURES.index(COL_MAB)
 # ----------------------------------------------------------------------------
 N_BATCHES = 30  # number of batch runs we are allowed to use
 
-# False: choose the 30 batches with the space-filling design and download them.
 # True : skip the design and use whichever batch_####.csv files are already
 #        present in PROVIDED_DIR (any number of folders, at most N_BATCHES).
 USE_DOWNLOADED_FILES = True

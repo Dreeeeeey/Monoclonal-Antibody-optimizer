@@ -1,18 +1,4 @@
 # MAIN PROGRAM
-# Your code starts here. This is the file that will be run.
-# =====================================================================
-# Assignment 3: Optimizing monoclonal antibody production.
-#
-# Workflow
-# --------
-# 1. Choose the 30 batches to "download" (space-filling design) -> selected_batches.csv
-# 2. Load only those 30 batch files from provided_files/
-# 3. Compare VAR / polynomial NVAR / k-NN NVAR models with LOBOCV
-# 4. Fit the best model on all 30 batches
-# 5. Forecast every initial condition (7 x 7 x 7 levels) and find the combination
-#    of initial glucose, glutamine, VCD and harvest time with the highest
-#    space-time profit
-# 6. Quantify uncertainty of the optimum with 1000 noisy simulations
 
 import os
 
@@ -32,7 +18,7 @@ def main():
     pd.set_option("display.max_columns", 20)
 
     # ------------------------------------------------------------------
-    # 1. Select the 30 batches (only done once so the budget is respected)
+    # 1. Select the 30 batches
     # ------------------------------------------------------------------
     ic = sf.load_initial_conditions()
     if c.USE_DOWNLOADED_FILES:
