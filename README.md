@@ -158,7 +158,7 @@ Space-time profit is the profit per litre divided by the cycle time (harvest tim
  
 *Figure 3. Predicted space-time profit (top row) and yield (bottom row) against each initial condition. Blue: mean over all combinations of the other two variables; orange: best combination.*
  
-**Glucose.** Predicted profit falls steadily as glucose increases: the best achievable value drops from 202.5 \$/(L d) at 15 mM to 137.7 \$/(L d) at 30 mM, and the mean from 64.0 to 45.9 (Figure 3, left column). Every extra 10 mM costs \$100 per litre, and it does not appear to buy early mAb: the five 15 mM runs are out of glucose after about a week (Figure 1, bottom left), yet their mAb had plateaued by day four (Figure 2, panels 1–5). This trend cannot be separated from the other variables, however, because the 15 mM runs are also the high-glutamine, high-VCD runs, and 25 mM has no run at all.
+**Glucose.** Predicted profit falls steadily as glucose increases: the best achievable value drops from 202.5 `$`/(L d) at 15 mM to 137.7 \$/(L d) at 30 mM, and the mean from 64.0 to 45.9 (Figure 3, left column). Every extra 10 mM costs \$100 per litre, and it does not appear to buy early mAb: the five 15 mM runs are out of glucose after about a week (Figure 1, bottom left), yet their mAb had plateaued by day four (Figure 2, panels 1–5). This trend cannot be separated from the other variables, however, because the 15 mM runs are also the high-glutamine, high-VCD runs, and 25 mM has no run at all.
  
 **Glutamine.** The best-case profit falls from 85.1 at 1 mM to 57.0 \$/(L d) at 3 mM and then rises to 202.5 at 6 mM (Figure 3, middle column). I do not interpret this as a biological effect. Table 3 shows that 3 mM and 5 mM are each represented by a single run, and 4 mM and 6 mM by none. The model fills these levels with the nearest runs, mainly the five fast-growing 7 mM batches, so the apparent glutamine optimum mostly reflects sparse data.
  
@@ -190,7 +190,7 @@ The search ranked every combination of initial conditions inside the training ra
 | Space-time profit | 197.5 | 162.5 | 235.1 | \$/(L d) |
 | Space-time yield | 0.383 | 0.348 | 0.420 | mg/(L d) |
  
-In words, the model recommends starting the culture with 15 mM glucose, 6 mM glutamine and 200,000 cells/mL, and harvesting after 1 day (24 h). This is predicted to cost \$370 per litre and return a culture value of \$765 per litre at harvest (95% PI: \$695 to \$840), for a space-time profit of 197.5 \$/(L d) (95% PI: 162.5 to 235.1) and a space-time yield of 0.383 mg/(L d) (95% PI: 0.348 to 0.420). The intervals are the 2.5th and 97.5th percentiles of 1000 simulated batches; cost is known exactly, so it has none.
+In words, the model recommends starting the culture with 15 mM glucose, 6 mM glutamine and 200,000 cells/mL, and harvesting after 1 day (24 h). This is predicted to cost \$370 per litre and return a culture value of \$765 per litre at harvest (95% PI: \$695 to `$`840), for a space-time profit of 197.5 \$/(L d) (95% PI: 162.5 to 235.1) and a space-time yield of 0.383 mg/(L d) (95% PI: 0.348 to 0.420). The intervals are the 2.5th and 97.5th percentiles of 1000 simulated batches; cost is known exactly, so it has none.
  
 ![Figure 5: forecast and space-time profit at the recommended conditions](figures/optimum_forecast.png)
  
