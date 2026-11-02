@@ -166,7 +166,7 @@ The search ranked every combination of initial conditions inside the training ra
 | Space-time profit | 197.5 | 162.5 | 235.0625 | $/(L d) |
 | Space-time yield | 0.3825 | 0.3475 | 0.4200625 | mg/(L d) |
 
-In words, the recommendation is to start the culture with 15.0 mM glucose, 6.0 mM glutamine and 200000 cells/mL VCD, and to harvest after 1.0 days (24 h). This is predicted to cost 370.0 \$/L and to return a culture value of 765.0 \$/L (95% PI: 695.0 to 840.1 \$/L) at harvest, giving a space-time profit of 197.5 $/(L d) (95% PI: 162.5 to 235.1 \$/(L d)) and a space-time yield of 0.3825 mg/(L d) (95% PI: 0.3475 to 0.4201 mg/(L d)).
+In words, the recommendation is to start the culture with 15.0 mM glucose, 6.0 mM glutamine and 200000 cells/mL VCD, and to harvest after 1.0 days (24 h). This is predicted to cost 370.0 \$/L and to return a culture value of 765.0 \$/L (95% PI: 695.0 to 840.1 \$/L) at harvest, giving a space-time profit of 197.5 \$/(L d) (95% PI: 162.5 to 235.1 \$/(L d)) and a space-time yield of 0.3825 mg/(L d) (95% PI: 0.3475 to 0.4201 mg/(L d)).
 
 The prediction intervals are the 2.5th and 97.5th percentiles of 1000 simulated batches started from this condition, so they describe how much a single new batch is expected to vary around the median. A wide interval on value but a narrower interval on harvest-time choice would mean that the recommendation is robust even though the exact payoff is uncertain. The cost has no interval because it is a known function of the chosen initial conditions.
 
